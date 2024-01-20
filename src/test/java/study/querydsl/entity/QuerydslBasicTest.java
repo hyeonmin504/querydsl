@@ -35,7 +35,6 @@ import static study.querydsl.entity.QTeam.*;
 @SpringBootTest
 @Transactional
 public class QuerydslBasicTest {
-
     @Autowired
     EntityManager em;
 
@@ -320,7 +319,7 @@ public class QuerydslBasicTest {
         //when
         //then
         assertThat(result).extracting("age")
-                .containsExactly(40);
+                .containsExactly(30,40);
     }
 
 
